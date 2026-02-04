@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    background-color: #000511;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Cambiado de #f4f4f4 al negro azulado del simulador */
+    background-color: #000511 !important;
+    flex: 1;
+}
+
+.header-container {
+    padding: 1rem 1.5rem;
+    /* Añadimos un borde inferior muy sutil para delimitar el área técnica */
+    border-bottom: 1px solid #1e293b;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-image {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-text {
+    /* Cambiado a la fuente técnica que elegiste */
+    font-family: 'Courier New', Courier, monospace !important;
+    font-weight: 900;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.word-Work {
+    /* Azul Work original integrado */
+    color: #1f4fd8;
+}
+
+.word-Unity {
+    /* Naranja Unity original integrado */
+    color: #fb6b39;
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.centered-card {
+    width: 95%;
+    max-width: 1200px;
+}

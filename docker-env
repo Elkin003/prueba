@@ -1,0 +1,14 @@
+## VARIABLES DE ENTORNO PARA POSTGRES
+POSTGRES_VERSION=18.1-alpine
+DB_PGSQL_PORT_PUBLIC=5435
+LOCAL_DATA_DIR_BD=/home/elkin/opt/docker-pgdata/workunity/
+
+## VARIABLES DE ENTORNO COMUNES
+DB_NAME=workunity
+DB_USER=workunityuser
+DB_PWD=workunityUser2525
+
+## VARIABLES DE ENTORNO PARA CONFIGURACIÓN DE ACCESO A BD
+
+#DRIVER_JDBC_DIR=target/lib/postgresql-42.7.3.jar
+DRIVER_JDBC_DIR=target/lib/*.jar
