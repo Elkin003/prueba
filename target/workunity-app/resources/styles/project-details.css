@@ -1,0 +1,375 @@
+.proyecto-detalle-container {
+    width: 100%;
+    padding: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+}
+
+/* Información del Proyecto */
+.proyecto-info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #1e293b;
+}
+
+.proyecto-info-left {
+    flex: 1;
+}
+
+.proyecto-titulo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.proyecto-titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.proyecto-badge-leader {
+    background-color: rgba(139, 92, 246, 0.2);
+    color: #a78bfa;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.proyecto-descripcion {
+    font-size: 1rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin: 0 0 1rem 0;
+}
+
+.proyecto-fecha {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+.proyecto-fecha i {
+    font-size: 1rem;
+}
+
+/* Contenido Principal */
+.proyecto-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+/* Sección de Tareas */
+.tareas-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 0.5rem 0;
+}
+
+.tarea-card {
+    background: #00081a;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.tarea-card:hover {
+    border-color: #1f4fd8;
+    box-shadow: 0 4px 20px rgba(31, 79, 216, 0.15);
+}
+
+.tarea-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+}
+
+.tarea-titulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    flex: 1;
+}
+
+.tarea-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.tarea-status.en-progreso {
+    background-color: rgba(59, 130, 246, 0.2);
+    color: #3b82f6;
+}
+
+.tarea-status.pendiente {
+    background-color: rgba(148, 163, 184, 0.2);
+    color: #94a3b8;
+}
+
+.tarea-descripcion {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+}
+
+.tarea-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.tarea-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.tarea-meta-item i {
+    font-size: 0.9rem;
+}
+
+.btn-ver-tarea {
+    width: 100% !important;
+    background-color: #334155 !important;
+    border: none !important;
+    color: #ffffff !important;
+    padding: 0.65rem !important;
+    border-radius: 8px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease;
+}
+
+.btn-ver-tarea:hover {
+    background-color: #475569 !important;
+}
+
+/* Sección de Miembros */
+.miembros-section {
+    background: #00081a;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.miembros-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.miembro-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: rgba(30, 41, 59, 0.3);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.miembro-item:hover {
+    background: rgba(30, 41, 59, 0.5);
+}
+
+.miembro-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.miembro-avatar-e {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.miembro-avatar-c {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.miembro-avatar-a {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.miembro-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+}
+
+.miembro-nombre-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.miembro-nombre {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.miembro-badge-leader {
+    background-color: rgba(139, 92, 246, 0.2);
+    color: #a78bfa;
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.miembro-email {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+/* Dialog Styles */
+.dialog-nueva-tarea .ui-dialog {
+    background-color: #00081a !important;
+    border: 1px solid #1e293b !important;
+    border-radius: 12px !important;
+}
+
+.dialog-nueva-tarea .ui-dialog-titlebar {
+    background-color: #00081a !important;
+    border-bottom: 1px solid #1e293b !important;
+    color: #ffffff !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    padding: 1.5rem !important;
+}
+
+.dialog-nueva-tarea .ui-dialog-content {
+    background-color: #00081a !important;
+    color: #ffffff !important;
+    padding: 1.5rem !important;
+}
+
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+}
+
+.form-input,
+.form-input input,
+.form-input textarea,
+.form-input select {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 6px !important;
+    padding: 0.75rem !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    width: 100% !important;
+}
+
+.form-input::placeholder,
+.form-input input::placeholder,
+.form-input textarea::placeholder {
+    color: #94a3b8 !important;
+}
+
+.form-hint {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.dialog-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding-top: 1rem;
+}
+
+.btn-cancelar {
+    background-color: #334155 !important;
+    border: none !important;
+    color: #ffffff !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 8px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
+
+.btn-cancelar:hover {
+    background-color: #475569 !important;
+}
+
+.btn-crear {
+    background-color: #1f4fd8 !important;
+    border: none !important;
+    color: #ffffff !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 8px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(31, 79, 216, 0.3);
+}
+
+.btn-crear:hover {
+    background-color: #15359a !important;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .proyecto-content {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,101 @@
+.home-container {
+    background-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.home-title-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 4rem 0;
+}
+
+.home-text {
+    flex: 1;
+    text-align: left;
+}
+
+.home-title {
+    text-align: left;
+    /* Color Naranja solicitado */
+    color: #fb6b39;
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-shadow: 0 0 15px rgba(251, 107, 57, 0.3);
+}
+
+.home-title-description {
+    /* Color más claro para mejor lectura */
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+}
+
+.home-actions-button {
+    background-color: #1f4fd8 !important;
+    border: none !important;
+    color: #ffffff !important;
+    padding: 1rem 2.5rem !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    border-radius: 4px !important;
+    margin-top: 2rem;
+    box-shadow: 0 4px 15px rgba(31, 79, 216, 0.4);
+}
+
+.home-actions-button:hover {
+    background-color: #15359a !important;
+    box-shadow: 0 6px 20px rgba(31, 79, 216, 0.6);
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background-color: #1e293b;
+    margin: 4rem 0;
+}
+
+.about-container {
+    padding-bottom: 6rem;
+}
+
+.about-title {
+    color: #fb6b39;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.about-description {
+    /* Color más claro para mejor lectura */
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.footer-container {
+    background-color: #000511 !important;
+    border-top: 1px solid #1e293b;
+    padding: 3rem;
+}
