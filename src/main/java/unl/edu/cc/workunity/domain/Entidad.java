@@ -10,8 +10,7 @@ import unl.edu.cc.workunity.domain.security.User;
 
 /**
  * Entidad representa el perfil de un usuario en el sistema.
- * Es equivalente a la clase Person del profesor.
- * 
+ *
  * @author Cristian Guaman
  */
 public class Entidad {

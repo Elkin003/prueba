@@ -11,7 +11,6 @@ import java.util.Objects;
 
 /**
  * Representa las credenciales de autenticación de un usuario
- * Adaptado de la clase User del profesor para WorkUnity
  */
 public class User implements Serializable {
 

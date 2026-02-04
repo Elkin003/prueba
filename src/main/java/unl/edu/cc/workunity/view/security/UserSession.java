@@ -14,7 +14,6 @@ import java.util.logging.Logger;
 
 /**
  * Bean de sesión para mantener información del usuario autenticado
- * Adaptado del código del profesor para WorkUnity
  */
 @Named
 @SessionScoped

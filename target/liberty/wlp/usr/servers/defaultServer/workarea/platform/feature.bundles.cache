@@ -1,4 +1,4 @@
-Cache-WriteTime=1770209342226;21
+Cache-WriteTime=1770210605108;21
 com.ibm.ws.app.manager.lifecycle/[1.0.0,1.1.0)=file:/home/elkin/projects_edu/poo/prueba/target/liberty/wlp/lib/com.ibm.ws.app.manager.lifecycle_1.0.109.jar;8@PARALLEL
 com.ibm.ws.artifact/[1.0.0,1.1.0)=file:/home/elkin/projects_edu/poo/prueba/target/liberty/wlp/lib/com.ibm.ws.artifact_1.0.109.jar;11@PARALLEL
 com.ibm.ws.artifact.loose/[1.0.0,1.1.0)=file:/home/elkin/projects_edu/poo/prueba/target/liberty/wlp/lib/com.ibm.ws.artifact.loose_1.0.109.jar;12@PARALLEL

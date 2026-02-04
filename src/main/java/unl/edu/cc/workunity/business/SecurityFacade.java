@@ -17,7 +17,6 @@ import java.io.Serializable;
 
 /**
  * Facade de seguridad para autenticación y gestión de usuarios
- * Adaptado del código del profesor para WorkUnity con relación User-Entidad
  */
 @Stateless
 public class SecurityFacade implements Serializable {
@@ -92,9 +91,9 @@ public class SecurityFacade implements Serializable {
                 try {
                     Entidad entidad = entityRepository.findByUser(userFound);
                     userFound.setEntidad(entidad);
-                    System.out.println("✅ Entidad cargada: " + entidad.getFullName());
+                    System.out.println("Entidad cargada: " + entidad.getFullName());
                 } catch (EntityNotFoundException e) {
-                    System.out.println("⚠️ Usuario sin Entidad: " + userFound.getName());
+                    System.out.println("Usuario sin Entidad: " + userFound.getName());
                 }
                 return userFound;
             }
@@ -144,9 +143,9 @@ public class SecurityFacade implements Serializable {
                     "Jimenez", // apellido
                     "0987654321" // teléfono
             );
-            System.out.println("✅ Usuario de prueba creado: admin / 12345678");
+            System.out.println("Usuario de prueba creado: admin / 12345678");
         } catch (Exception e) {
-            System.out.println("ℹ️ Usuario de prueba ya existe o error: " + e.getMessage());
+            System.out.println("Usuario de prueba ya existe o error: " + e.getMessage());
         }
     }
 }

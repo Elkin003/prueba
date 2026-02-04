@@ -11,7 +11,6 @@ import java.util.Base64;
 
 /**
  * Utilidad para encriptación de contraseñas
- * Adaptado del código del profesor
  */
 public class EncryptorManager {
 
