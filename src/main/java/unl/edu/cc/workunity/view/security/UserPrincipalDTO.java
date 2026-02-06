@@ -4,9 +4,6 @@ import unl.edu.cc.workunity.domain.security.User;
 
 import java.io.Serializable;
 
-/**
- * DTO para representar el usuario principal en la sesión HTTP
- */
 public class UserPrincipalDTO implements Serializable {
 
     private static final long serialVersionUID = 1L;

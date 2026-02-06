@@ -12,9 +12,6 @@ import unl.edu.cc.workunity.exception.EntityNotFoundException;
 import java.io.Serializable;
 import java.util.logging.Logger;
 
-/**
- * Bean de sesión para mantener información del usuario autenticado
- */
 @Named
 @SessionScoped
 public class UserSession implements Serializable {
@@ -27,14 +24,10 @@ public class UserSession implements Serializable {
 
     private User user;
 
-    /**
-     * Método llamado después del login para inicializar la sesión
-     */
     public void postLogin(@NotNull User user) throws EntityNotFoundException {
         logger.info("User logged in: " + user.getName());
         this.user = user;
 
-        // Cargar la entidad (perfil) del usuario si existe
         if (user.getEntidad() == null) {
             try {
                 Entidad entidad = entityRepository.findByUser(user);

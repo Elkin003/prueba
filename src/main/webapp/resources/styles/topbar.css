@@ -1,31 +1,30 @@
-.menu-bar {
+.topbar .ui-menubar {
     background: transparent !important;
     border: none !important;
     margin-top: 5px;
-    /* Fuente técnica del simulador */
     font-family: 'Courier New', Courier, monospace !important;
 }
 
-/* Texto de los items del menú (Inicio, etc.) */
-.ui-menuitem-link .ui-menuitem-text {
-    /* Color claro para legibilidad sobre el fondo negro #000511 */
+.topbar .ui-menuitem-link .ui-menuitem-text {
     color: #cbd5e1 !important;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.ui-menuitem-link:hover .ui-menuitem-text {
-    /* Cambio al Naranja Unity al pasar el mouse */
+.topbar .ui-menuitem-link:hover {
+    background: rgba(251, 107, 57, 0.08) !important;
+    border-radius: 4px;
+}
+
+.topbar .ui-menuitem-link:hover .ui-menuitem-text {
     color: #fb6b39 !important;
     text-shadow: 0 0 8px rgba(251, 107, 57, 0.4);
 }
 
-/* Botón de Login en la navegación (Azul Work) */
-.login-nav-button {
+.login-nav-button.ui-button {
     background-color: #1f4fd8 !important;
-    border: none !important; /* Eliminamos bordes para estilo bloque */
+    border: none !important;
     color: #ffffff !important;
-    font-family: 'Courier New', Courier, monospace !important;
     font-weight: bold !important;
     text-transform: uppercase;
     border-radius: 4px !important;
@@ -33,18 +32,13 @@
 }
 
 .login-nav-button:hover {
-    background-color: #15359a !important; /* Variante oscura */
-    box-shadow: 0 0 15px rgba(31, 79, 216, 0.5);
+    background-color: #15359a !important;
 }
 
-/* Botón del usuario cuando ya está logueado */
-.user-menu-button {
-    /* Borde Naranja Unity para diferenciarlo */
+.user-menu-button.ui-button {
     border: 1px solid #fb6b39 !important;
     color: #fb6b39 !important;
     background: transparent !important;
-    font-family: 'Courier New', Courier, monospace !important;
-    text-transform: uppercase;
     font-weight: bold !important;
 }
 

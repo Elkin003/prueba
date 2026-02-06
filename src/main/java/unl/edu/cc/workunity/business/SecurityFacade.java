@@ -38,10 +38,8 @@ public class SecurityFacade implements Serializable {
 
         try {
             userRepository.find(user.getName());
-            // Si encuentra el usuario, significa que ya existe
             throw new AlreadyEntityException("Usuario ya existe");
         } catch (EntityNotFoundException e) {
-            // No existe, podemos crear
             return userRepository.save(user);
         }
     }
@@ -54,23 +52,18 @@ public class SecurityFacade implements Serializable {
             String nombre, String apellido, String telefono)
             throws AlreadyEntityException, EncryptorException {
 
-        // Crear usuario (credenciales)
         User user = new User();
         user.setName(username);
         user.setPassword(password);
         user.setEmail(email);
 
-        // Guardar usuario con contraseña encriptada
         user = createUser(user);
 
-        // Crear entidad (perfil)
         Entidad entidad = new Entidad(nombre, apellido, telefono);
         entidad.setUsuario(user);
 
-        // Guardar entidad
         entidad = entityRepository.save(entidad);
 
-        // Vincular entidad con usuario
         user.setEntidad(entidad);
         userRepository.save(user);
 
@@ -87,7 +80,6 @@ public class SecurityFacade implements Serializable {
             String pwdEncrypted = EncryptorManager.encrypt(password);
 
             if (pwdEncrypted.equals(userFound.getPassword())) {
-                // IMPORTANTE: Cargar la Entidad asociada
                 try {
                     Entidad entidad = entityRepository.findByUser(userFound);
                     userFound.setEntidad(entidad);
@@ -123,7 +115,6 @@ public class SecurityFacade implements Serializable {
                 throw new AlreadyEntityException("Ya existe otro usuario con ese nombre");
             }
         } catch (EntityNotFoundException ignored) {
-            // No problem, nombre disponible
         }
 
         return userRepository.save(user);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <liberty-plugin-config>
-    <installDirectory>/home/elkin/projects_edu/poo/prueba/target/liberty/wlp</installDirectory>
+    <installDirectory>/home/elkin/projects_edu/WorkUnity-App/target/liberty/wlp</installDirectory>
     <assemblyArtifact>
         <groupId>io.openliberty</groupId>
         <artifactId>openliberty-kernel</artifactId>
@@ -8,11 +8,11 @@
         <type>zip</type>
     </assemblyArtifact>
     <assemblyArchive>/home/elkin/.m2/repository/io/openliberty/openliberty-kernel/26.0.0.1/openliberty-kernel-26.0.0.1.zip</assemblyArchive>
-    <assemblyInstallDirectory>/home/elkin/projects_edu/poo/prueba/target/liberty</assemblyInstallDirectory>
+    <assemblyInstallDirectory>/home/elkin/projects_edu/WorkUnity-App/target/liberty</assemblyInstallDirectory>
     <refresh>false</refresh>
-    <serverDirectory>/home/elkin/projects_edu/poo/prueba/target/liberty/wlp/usr/servers/defaultServer</serverDirectory>
-    <userDirectory>/home/elkin/projects_edu/poo/prueba/target/liberty/wlp/usr</userDirectory>
-    <serverOutputDirectory>/home/elkin/projects_edu/poo/prueba/target/liberty/wlp/usr/servers/defaultServer</serverOutputDirectory>
+    <serverDirectory>/home/elkin/projects_edu/WorkUnity-App/target/liberty/wlp/usr/servers/defaultServer</serverDirectory>
+    <userDirectory>/home/elkin/projects_edu/WorkUnity-App/target/liberty/wlp/usr</userDirectory>
+    <serverOutputDirectory>/home/elkin/projects_edu/WorkUnity-App/target/liberty/wlp/usr/servers/defaultServer</serverOutputDirectory>
     <serverName>defaultServer</serverName>
     <projectType>war</projectType>
     <projectCompileDependency>org.primefaces:primefaces:15.0.0</projectCompileDependency>
@@ -22,8 +22,8 @@
     <projectCompileDependency>com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:20260102.1</projectCompileDependency>
     <projectCompileDependency>com.googlecode.owasp-java-html-sanitizer:java8-shim:20260102.1</projectCompileDependency>
     <projectCompileDependency>com.googlecode.owasp-java-html-sanitizer:java10-shim:20260102.1</projectCompileDependency>
-    <configDirectory>/home/elkin/projects_edu/poo/prueba/src/main/liberty/config</configDirectory>
-    <configFile>/home/elkin/projects_edu/poo/prueba/src/main/liberty/config/server.xml</configFile>
+    <configDirectory>/home/elkin/projects_edu/WorkUnity-App/src/main/liberty/config</configDirectory>
+    <configFile>/home/elkin/projects_edu/WorkUnity-App/src/main/liberty/config/server.xml</configFile>
     <bootstrapProperties>
         <db.port.number>5434</db.port.number>
         <driver.jdbc.dir>${server.config.dir}/lib/global</driver.jdbc.dir>
@@ -34,5 +34,5 @@
     <stripVersion>false</stripVersion>
     <installAppPackages>project</installAppPackages>
     <applicationFilename>workunity-app.war.xml</applicationFilename>
-    <installAppsConfigDropins>/home/elkin/projects_edu/poo/prueba/target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml</installAppsConfigDropins>
+    <installAppsConfigDropins>/home/elkin/projects_edu/WorkUnity-App/target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml</installAppsConfigDropins>
 </liberty-plugin-config>

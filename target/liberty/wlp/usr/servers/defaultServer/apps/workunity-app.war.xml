@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive>
-    <dir sourceOnDisk="/home/elkin/projects_edu/poo/prueba/src/main/webapp" targetInArchive="/"/>
-    <dir sourceOnDisk="/home/elkin/projects_edu/poo/prueba/target/classes" targetInArchive="/WEB-INF/classes"/>
+    <dir sourceOnDisk="/home/elkin/projects_edu/WorkUnity-App/src/main/webapp" targetInArchive="/"/>
+    <dir sourceOnDisk="/home/elkin/projects_edu/WorkUnity-App/target/classes" targetInArchive="/WEB-INF/classes"/>
     <file sourceOnDisk="/home/elkin/.m2/repository/org/primefaces/primefaces/15.0.0/primefaces-15.0.0-jakarta.jar" targetInArchive="/WEB-INF/lib/primefaces-15.0.0-jakarta.jar"/>
     <file sourceOnDisk="/home/elkin/.m2/repository/org/primefaces/primefaces-themes/15.0.0/primefaces-themes-15.0.0.jar" targetInArchive="/WEB-INF/lib/primefaces-themes-15.0.0.jar"/>
     <file sourceOnDisk="/home/elkin/.m2/repository/org/postgresql/postgresql/42.7.9/postgresql-42.7.9.jar" targetInArchive="/WEB-INF/lib/postgresql-42.7.9.jar"/>
@@ -9,5 +9,5 @@
     <file sourceOnDisk="/home/elkin/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20260102.1/owasp-java-html-sanitizer-20260102.1.jar" targetInArchive="/WEB-INF/lib/owasp-java-html-sanitizer-20260102.1.jar"/>
     <file sourceOnDisk="/home/elkin/.m2/repository/com/googlecode/owasp-java-html-sanitizer/java8-shim/20260102.1/java8-shim-20260102.1.jar" targetInArchive="/WEB-INF/lib/java8-shim-20260102.1.jar"/>
     <file sourceOnDisk="/home/elkin/.m2/repository/com/googlecode/owasp-java-html-sanitizer/java10-shim/20260102.1/java10-shim-20260102.1.jar" targetInArchive="/WEB-INF/lib/java10-shim-20260102.1.jar"/>
-    <file sourceOnDisk="/home/elkin/projects_edu/poo/prueba/target/tmp/META-INF/MANIFEST.MF" targetInArchive="/META-INF/MANIFEST.MF"/>
+    <file sourceOnDisk="/home/elkin/projects_edu/WorkUnity-App/target/tmp/META-INF/MANIFEST.MF" targetInArchive="/META-INF/MANIFEST.MF"/>
 </archive>

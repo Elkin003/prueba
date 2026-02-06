@@ -93,8 +93,6 @@ public class AuthenticationController implements Serializable {
                 new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", message));
     }
 
-    // Getters y Setters
-
     public String getUsername() {
         return username;
     }

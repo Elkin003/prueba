@@ -39,16 +39,13 @@ public class ProjectDetailController implements Serializable {
     @Inject
     private UserSession userSession;
 
-    // Parámetro de URL
     private Long projectId;
 
-    // Datos del proyecto
     private Proyecto project;
     private List<Tarea> tasks;
     private List<Integrante> members;
     private Integrante currentUserIntegrante;
 
-    // Campos para modal de nueva tarea
     private String newTaskTitle;
     private String newTaskDescription;
     private Date newTaskDeadline;
@@ -63,16 +60,12 @@ public class ProjectDetailController implements Serializable {
 
     private void loadProjectData() {
         try {
-            // Cargar proyecto
             project = workUnityFacade.findProject(projectId);
 
-            // Cargar tareas del proyecto
             tasks = workUnityFacade.findTasksByProject(project);
 
-            // Cargar miembros del proyecto
             members = workUnityFacade.findMembersByProject(project);
 
-            // Obtener integrante actual para validar permisos
             Entidad currentEntity = userSession.getUser().getEntidad();
             try {
                 currentUserIntegrante = workUnityFacade.findIntegrantByProjectAndEntity(project, currentEntity);
@@ -100,16 +93,13 @@ public class ProjectDetailController implements Serializable {
                 return;
             }
 
-            // Convertir Date a LocalDate
             LocalDate fechaLimite = newTaskDeadline.toInstant()
                     .atZone(ZoneId.systemDefault())
                     .toLocalDate();
 
-            // Crear tarea usando el facade
             Tarea newTask = workUnityFacade.createTask(currentUserIntegrante,
                     newTaskTitle, newTaskDescription, fechaLimite);
 
-            // Asignar si se seleccionó un integrante
             if (selectedIntegranteId != null) {
                 Integrante asignado = members.stream()
                         .filter(i -> i.getId().equals(selectedIntegranteId))
@@ -121,12 +111,10 @@ public class ProjectDetailController implements Serializable {
                 }
             }
 
-            // Recargar datos
             loadProjectData();
 
             addSuccessMessage("Tarea creada exitosamente");
 
-            // Limpiar campos del modal
             clearNewTaskFields();
 
         } catch (Exception e) {
@@ -164,8 +152,6 @@ public class ProjectDetailController implements Serializable {
         FacesContext.getCurrentInstance().addMessage(null,
                 new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", message));
     }
-
-    // Getters y Setters
 
     public Long getProjectId() {
         return projectId;

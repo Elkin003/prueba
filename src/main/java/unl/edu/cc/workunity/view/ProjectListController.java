@@ -36,7 +36,6 @@ public class ProjectListController implements Serializable {
 
     private List<Proyecto> projects;
 
-    // Campos para el modal de crear proyecto
     private String newProjectName;
     private String newProjectDescription;
     private Date newProjectDeadline;
@@ -81,23 +80,19 @@ public class ProjectListController implements Serializable {
             Entidad currentEntity = userSession.getUser().getEntidad();
             logger.info("Creando proyecto para: " + currentEntity.getFullName());
 
-            // Convertir Date a LocalDate
             LocalDate fechaLimite = newProjectDeadline.toInstant()
                     .atZone(ZoneId.systemDefault())
                     .toLocalDate();
 
-            // Crear proyecto usando el facade
             Proyecto nuevoProyecto = workUnityFacade.createProject(currentEntity, newProjectName,
                     newProjectDescription, fechaLimite);
 
-            logger.info("✅ Proyecto creado con ID: " + nuevoProyecto.getId());
+            logger.info("Proyecto creado con ID: " + nuevoProyecto.getId());
 
-            // Recargar lista de proyectos
             loadProjects();
 
             addSuccessMessage("Proyecto creado exitosamente");
 
-            // Limpiar campos del modal
             clearNewProjectFields();
 
         } catch (IllegalArgumentException e) {
@@ -129,8 +124,6 @@ public class ProjectListController implements Serializable {
         FacesContext.getCurrentInstance().addMessage(null,
                 new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", message));
     }
-
-    // Getters y Setters
 
     public List<Proyecto> getProjects() {
         return projects;

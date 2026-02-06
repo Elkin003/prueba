@@ -36,15 +36,12 @@ public class TaskDetailController implements Serializable {
     @Inject
     private UserSession userSession;
 
-    // Parámetro de URL
     private Long taskId;
 
-    // Datos de la tarea
     private Tarea task;
     private List<Comentario> comments;
     private Integrante currentUserIntegrante;
 
-    // Campo para agregar comentario
     private String newCommentText;
 
     @PostConstruct
@@ -56,13 +53,10 @@ public class TaskDetailController implements Serializable {
 
     private void loadTaskData() {
         try {
-            // Cargar tarea
             task = workUnityFacade.findTask(taskId);
 
-            // Cargar comentarios
             comments = workUnityFacade.findCommentsByTask(task);
 
-            // Obtener integrante actual en el proyecto
             Entidad currentEntity = userSession.getUser().getEntidad();
             List<Integrante> projectMembers = workUnityFacade
                     .findMembersByProject(task.getProyecto());
@@ -99,13 +93,10 @@ public class TaskDetailController implements Serializable {
                 return;
             }
 
-            // Agregar comentario usando el facade
             workUnityFacade.addCommentToTask(task, currentUserIntegrante, newCommentText);
 
-            // Recargar datos
             loadTaskData();
 
-            // Limpiar campo
             newCommentText = null;
 
             addSuccessMessage("Comentario agregado");

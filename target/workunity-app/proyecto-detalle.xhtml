@@ -35,7 +35,7 @@
                     <p:autoUpdate />
                 </p:messages>
 
-                <!-- Botón Crear Tarea (solo para líderes) -->
+                <!-- Botón Crear Tarea -->
                 <h:panelGroup layout="block" rendered="#{projectDetailController.currentUserLeader}">
                     <p:commandButton value="Nueva Tarea" icon="pi pi-plus" onclick="PF('newTaskDialog').show();"
                         styleClass="ui-button-success btn-nueva-tarea" type="button" />
